@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="restaurant.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    
+</head>
+<body>
+
+  <header class="header">
+        <a href="#home" class="logo">Khushi
+            <span>Cafe</span></a>
+
+                <div class="nav">
+                    <a href="#menu">Home</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#service">Service</a>
+                </div>
+            </header>
+            <!-- time and greet  -->
+            <div class="main-container">
+              <div class="item-box">
+                <h1 id="menu">MENU</h1>
+                <ul>
+                  <li><a href="coffee.html" id="anchorTag">Coffee</a></li>
+                 <li><a href="coffee.html" id="anchorTag" >Coffee</a></li>
+                 <li><a href="coffee.html" id="anchorTag">Coffee</a></li>
+                 <li><a href="coffee.html" id="anchorTag">Coffee</a></li>
+                 <li><a href="coffee.html" id="anchorTag">Coffee</a></li>
+                </ul>
+              </div>
+             
+              <!-- greet-time -->
+               
+             <div class="greet-time">
+
+                <span class="date">Date:</span>
+                <span id="date"></span>
+
+              <p>
+                <span class="time">Time:</span>
+                <span id="time"></span>
+              </p>
+
+              <div class="greet">
+
+                <p>Hi...
+                </p>
+                <span id="greet">Good Morning.</span>
+              </div> 
+             
+             </div>
+             
+               <!-- Swiper -->
+   <div class="swiper mySlider" style="margin-left:4%;margin-top:10px">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="tranding-food-1.png" alt="Pizza">
+        <div class="food-info">
+          <h2>Special Pizza</h2>
+          <p>Loaded with cheese, toppings, and crispy crust. A timeless favorite!</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="tranding-food-2.png" alt="Meat Ball">
+        <div class="food-info">
+          <h2>Meat Ball</h2>
+          <p>Juicy meatballs in rich tomato sauce. Perfect for every bite!</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="tranding-food-3.png" alt="Burger">
+        <div class="food-info">
+          <h2>Burger</h2>
+          <p>Grilled patty, melted cheese, crispy lettuce – a hearty delight!</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="tranding-food-4.png" alt="Fish Curry">
+        <div class="food-info">
+          <h2>Fish Curry</h2>
+          <p>Fresh fish cooked in spicy coconut curry. A coastal classic!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+ <div class="swiper-pagination" style="margin-left: 14%; color: aqua;"></div>    <!-- swiper dot -->
+
+
+</div>
+
+<!-- contact page -->
+
+
+<div class="contact-area" id="contact">
+  <div id="contact-item">
+    <h1 id="contact-us">Contact Us</h1>
+    <!-- <span id="contact-data">Name:</span>  -->
+    <input type="text" placeholder="Name" class="input-box">
+    <!-- <span id="contact-data">Email:</span> -->
+    <input type="email" placeholder="Email" class="input-box">
+    <textarea name="message" id="message" row="50" col="50" placeholder="Type your Message"></textarea>
+    <button id="btn">Submit</button>
+  </div>
+</div>
+
+
+<!-- about section  -->
+
+<div class="about-section" id="about">
+  <div class="about-us">
+    <div class="about-img">
+      <img src="group.png" alt="">
+    </div>
+    <div class="about-msg">
+      <h1>About US</h1>
+      <p>Our restaurant community is working together with dedication and shared passion to grow and elevate the standard of professionalism across the industry.We always prioritize our customers, ensuring they feel valued, heard, and well cared for every time they visit.</p>
+    </div>
+  </div>
+</div>
+<div class="about-item">
+  <div class="item-area">
+    <div class="icon-box">
+      <i class="fa fa-birthday-cake" style="font-size:24px;color:white"></i>
+      <span id="item-name">Cake</span>
+    </div>
+    <p id="item-data">Step in for a meal, stay for the cake—because dessert should never be an afterthought.</p>
+  </div>
+  <div class="item-area">
+    <div class="icon-box">
+      <i class="fas fa-coffee" title="Coffee" style="font-size:24px;color:white"></i>
+      <span id="item-name">Coffee</span>
+    </div>
+    <p id="item-data">Start your day—or sweeten your evening—with the perfect cup of our freshly brewed coffee.</p>
+  </div>
+  <div class="item-area">
+    <div class="icon-box">
+      <i class="fas fa-hamburger" title="Burger" style="font-size:24px;color:white"></i>
+      <span id="item-name">Burger</span>
+    </div>
+    <p id="item-data">Not just a burger, it’s a bite of happiness in every layer!</p>
+  </div>
+  <div class="item-area">
+    <div class="icon-box">
+      <i class="fas fa-bowl-food" title="Soup" style="font-size:24px;color:white"></i>
+      <span id="item-name">Soup</span>
+    </div>
+    <p id="item-data">One spoon, endless comfort—discover your new favorite bowl of soup today!</p>
+  </div>
+  <div class="item-area">
+    <div class="icon-box">
+      <i class="fas fa-pizza-slice" title="Pizza" style="font-size:24px;color:white"></i>
+      <span id="item-name">Pizza</span>
+    </div>
+    <p id="item-data">Hot, cheesy, and loaded with flavor—our pizzas are love at first bite!</p>
+  </div>
+  <div class="item-area">
+    <div class="icon-box">
+      <i class="fas fa-bowl-rice" title="Noodles" style="font-size:24px;color:white"></i>
+      <span id="item-name">Noddles</span>
+    </div>
+    <p id="item-data">Let your taste buds travel—our noodles are a passport to Asian-inspired delight!</p>
+  </div>
+  <div id="service"></div>
+</div>
+
+   <!-- service part  -->
+
+<div class="service-section" >
+  <h1 class="service">Our Service</h1>
+
+  <div class="service-container">
+    <div id="service-box">
+      <h1> Dine-In Experience</h1>
+      <p>Enjoy a warm, welcoming atmosphere with attentive service and a menu that delights every taste bud. Whether it’s a family dinner or a casual outing, we make every meal special.</p>
+    </div>
+   
+    <div id="service-box">
+      <h1>Takeaway & Delivery</h1>
+      <p>Craving our food at home or the office? Order online or call us—our fast and fresh delivery brings the flavors to your doorstep.</p>
+
+    </div>
+  <div id="service-box">
+    <h1>Customized Orders & Party Catering</h1>
+    <p>From birthdays to office lunches, we offer customized meals and cake orders to make your event memorable. Pre-order to add a personal touch!</p>
+
+  </div>
+  <div id="service-box">
+    <h1>Special Menus & Seasonal Offers</h1>
+    <p>Discover our chef’s specials and limited-time offers, bringing you new tastes every season.</p>
+
+  </div>
+  </div>
+</div>
+
+<div class="bottom-section">
+  <div class="bottom-item">
+    <div id="box">
+      <h1>Contact Information</h1>
+      <h2>Prince Yadav</h2>
+      <h2>9999999999</h2>
+      <h2>xyz12@gmail.com</h2>
+    </div>
+    <div id="box">
+      <h1>Opening And Closing Hour</h1>
+      <h2>10:00 Am to 10:00 Pm</h2>
+    </div>
+    <div id="box">
+      <h1>Useful Link</h1>
+      <h2><a href="#menu">Home</a></h2>
+      <h2><a href="#contact">Contact</a></h2>
+      <h2><a href="#about">About</a></h2>
+      <h2><a href="#service">Service</a></h2>
+    </div>
+  </div>
+
+  <div class="bottom-icon">
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+    
+  </div>
+</div>
+<div class="footer-section">
+  <footer>
+    <p>&copy; 2025 Prince Restaurant. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.mySlider', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        
+      }
+    }); 
+    </script>
+               
+               <script src="restaurant.js"></script>
+               
+               
+              
+               
+              </body>
+              
+              
+
+</html>
