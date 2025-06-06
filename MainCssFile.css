@@ -1,0 +1,476 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins",sans-serif;
+}
+
+:root{
+  --bg-color:#EBE3DB;
+}
+
+body{
+
+  background: var(--bg-color);
+  color:var(--text-color);
+   overflow-x: hidden;
+
+}
+.header .logo{
+  color:rgb(247, 250, 250);
+  font-size: 2.0rem;
+  margin-left:2px;
+}
+.header{
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 50px;
+  padding: 2rem 5% 2rem;
+  background:#b2744c;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  z-index:5;
+
+}
+
+.logo{
+  font-size:1.2rem;
+  font-weight:800;
+  cursor:pointer;
+}
+.nav a{
+ color: rgb(222, 220, 220);
+ cursor: pointer;
+ font-size: 1.1rem;
+ margin: 0px 10px 0px 10px;
+ font-family: 'Abril Fatface';
+ font-weight: bold;
+
+}
+
+
+.nav a:hover{
+ cursor: pointer;
+ color:rgb(10, 199, 232);
+}
+
+
+.main-container{
+ width: 98%;
+ height: 100%;
+ display: flex;
+ /* position: fixed; */
+ margin-left: 10px;
+ margin-top: 100px;
+ background-color: #cfc6c6;
+}
+.item-box li{
+ color:rgb(12, 12, 12);
+ list-style: none;
+ padding: 20px;
+ font-weight: bold;
+ font-size: 1.4rem;
+ font-family: 'Abril Fatface';
+}
+
+.item-box a{
+  color:#000;
+}
+
+#menu{
+ font-size: 2.1rem;
+ text-align: center;
+ color: white;
+ background-color: black;
+ /* height: 46px; */
+ width: 100%;
+}
+a:hover{
+ cursor: pointer;
+ color:rgb(147, 10, 232);
+ transform:scale(1.1);
+
+}
+
+.item-box{
+ background-color:rgb(255, 252, 252);
+ opacity: 0.8;
+ width: 140px;
+ height: 100%;
+ margin-left: 10px;
+ margin-top: 10px;
+
+}
+
+
+
+#coffee-bold-1{
+ color: #b2744c;
+ font-family: 'Sofia';
+ font-size: 1.8rem;
+}
+
+#coffee-bold-2{
+  color: #b2744c;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin-top: 275px;
+  margin-left: -218px;
+}
+/* img{
+ mix-blend-mode: multiply;
+ width: 220px;
+} */
+#coffee-text{
+ width: 280px;
+ font-size: 1.4rem;
+ font-weight: bold;
+ margin-left: 60px;
+ margin-top: 120px;
+}
+
+
+.swiper {
+width: 60%;
+margin-top: 100px;
+margin-left:100px;
+height: 400px;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+position: relative;
+}
+
+.swiper-slide {
+position: relative;
+width: 90%;
+height: 100%;
+}
+
+.swiper-slide img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.food-info {
+position: absolute;
+top: 0;
+left: 0;
+width: 60%;
+height: 100%;
+color: #000;
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+z-index: 2;
+}
+
+.food-info h2 {
+color:white;
+margin-bottom: 10px;
+font-size: 24px;
+}
+
+.food-info p {
+font-size: 14px;
+line-height: 1.5;
+font-weight: bold;
+color:rgb(238, 138, 157);
+background: #fcfcfb; /* Light yellow */
+padding: 10px;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next{
+color: #f49c9c;
+background-color: #fcfcfb;
+margin-right: 6px;
+margin-top:7% ;
+
+}
+.swiper-button-prev{
+color: #f49c9c;
+background-color: #fcfcfb;
+margin-left: 32%;
+margin-top:5% ;
+
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+background-color: #6aeaec;
+
+}
+
+.cont-coffee{
+width:100px;
+height:50px;
+}
+
+.greet-time{
+background-color: #eae7f0;
+height: 192px;
+padding: 5px;
+margin-top:10px;
+margin-left: 8px;
+border: 2px solid red;
+border-radius: 9px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.greet-time p{
+padding:6px;
+margin-left:-2px;
+}
+
+.date{
+font-weight: bold;
+
+}
+.time{
+margin-left:-6px;
+font-weight: bold;
+
+}
+.greet{
+margin-top:20px;
+font-weight: bold;
+
+}
+
+
+
+.contact-area{
+  width:100%;
+  height: 100%;
+  border: 4px solid;
+  border-top:4px solid #f09393;
+  background-image: url('coffeeforcontact.png');
+  margin-top: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+#contact-item{
+  background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 29px;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 30%;
+    height: 350px;
+    border-radius: 4px;
+}
+
+#contact-us{
+  font-family: 'Abril Fatface';
+  font-size: 2.6rem;
+
+}
+
+#contact-data{
+  margin-top: 20px;
+  font-size: large;
+  margin-right: 180px;
+  font-family: 'Abril Fatface';
+
+}
+.input-box{
+  border: none;
+  border-bottom: 2px solid #333;
+  padding: 8px 0;
+  width: 300px;
+  font-size: 16px;
+  outline: none;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.input-box:hover {
+  border-bottom: 2px solid #00d9ff; 
+}
+
+#message{
+  margin-top: 15px;
+  margin-left: 56px;
+  width: 300px;
+  height: 80px;
+
+}
+#btn{
+  margin-top: 15px;
+  padding: 3px 10px 3px 10px;
+  color: #4106f2;
+  border: 2px solid rgb(41, 11, 19);
+  border-radius: 4px;
+  font-family: 'Abril Fatface';
+  font-size: 1.0rem;
+
+}
+#btn:hover{
+  color: #06f2e2;
+  background-color: #aa0eda;
+  border-color: rgb(240, 100, 124);
+
+}
+
+.about-section{
+    display: flex;
+    border-top:4px solid #f09393;
+    width: 100%;
+    height:100%;
+    margin-top: 58%;
+    padding:20px;
+    background-color: #e1e1e1;
+}
+
+.about-us{
+  display: flex;
+}
+.about-img{
+  margin-left: 100px;
+  padding: 20px;
+}
+.about-us img{
+  width:350px;
+  height: 300px;
+
+}
+.about-msg {
+  text-align: center;
+  margin-top:15%;
+}
+
+.about-item{
+  display: grid;
+grid-template-columns: auto auto auto;
+justify-content: space-around;
+  background-color: #4f4747;
+  padding: 10px;
+}
+.item-area{
+  padding: 4px;
+  margin-left:20px;
+}
+ #item-data{
+  margin-left:2px;
+  font-family:'Abril Fatface' ;
+  color:white;
+ }
+.icon-box{
+  font-size: 2rem;
+  width: 100px;
+  height: 100px;
+  padding: 16px;
+  margin-left: -9px;
+}
+#item-name{
+  font-size: 1.8rem;
+  margin-left: -8px;
+  font-family: 'Abril Fatface';
+  color:white;
+}
+
+.service-section{
+  margin-top: 45px;
+  border-top:2px solid #f09393;
+  background-color: #e1e1e1;
+ 
+}
+
+.service-section h1{
+  text-align: center;
+  padding: 10px;
+  font-size: 2.2rem;
+  font-family: 'Abril Fatface';
+}
+.service-container{
+  margin-top: 25px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+
+#service-box{
+  background-color: white;
+    width: 20%;
+    padding:4px;
+    border: 1px solid aqua;
+    border-radius: 2px;
+}
+#service-box h1{
+
+  font-size:1.4rem;
+  font-family: 'Abril Fatface';
+}
+#service-box p{
+  font-size:1.2rem;
+  font-family: 'Abril Fatface';
+  padding:2px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#service-box span{
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bottom-section{
+  background-color: #eed5d5;
+  margin-top: 30px;
+  border-top:2px solid #f09393;
+  height: 200px;
+
+}
+.bottom-item{
+  display: flex;
+  justify-content: space-evenly;
+}
+.bottom-section h1{
+  font-size: 1.4rem;
+  margin-top: 20px;
+  font-family: 'Abril Fatface';
+
+}
+.bottom-section h2,a{
+  font-size: 1rem;
+  margin: 8px;
+  color:rgb(122, 55, 55);
+}
+
+.footer-section{
+  background-color: #000;
+  text-align: center;
+  color: white;
+}
+.bottom-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-icon a{
+  margin:6px;
+  font-size: 1.4rem;
+  color: rgb(249, 135, 135);
+}   
